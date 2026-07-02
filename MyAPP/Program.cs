@@ -6,7 +6,11 @@ namespace MyAPP
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("oi");
+
+            sbyte x = 100; 
+
+
+            Console.WriteLine(x);
         }
 }
 }
