@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace MyAPP
 {
     class Program
@@ -13,6 +14,16 @@ namespace MyAPP
             string nome = "Jose";
             int t = int.MaxValue;
 
+
+            Class1 Valor1, Valor2;
+
+            Valor1 = new Class1();
+            Valor2 = new Class1();
+
+
+
+            Console.WriteLine($"valores: {Valor1.valor1}");
+
             
             Console.WriteLine(x);
             Console.WriteLine(y);
@@ -20,6 +31,16 @@ namespace MyAPP
             Console.WriteLine(t);
 
             Console.WriteLine($"bem vindo {nome}");
+
+            string nomeInput;
+
+            Console.WriteLine("Entre com as medidas do triangulo X");
+            nomeInput = Console.ReadLine();
+            Console.WriteLine(nomeInput);
+
+
+
+
         }
 }
 }
