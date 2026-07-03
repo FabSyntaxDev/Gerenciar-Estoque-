@@ -10,7 +10,7 @@ namespace MyAPP
             sbyte x = 100;
             int y = 99999999;
             long l = 99999999999L;
-
+            string nome = "Jose";
             int t = int.MaxValue;
 
             
@@ -18,6 +18,8 @@ namespace MyAPP
             Console.WriteLine(y);
             Console.WriteLine(l);
             Console.WriteLine(t);
+
+            Console.WriteLine($"bem vindo {nome}");
         }
 }
 }
