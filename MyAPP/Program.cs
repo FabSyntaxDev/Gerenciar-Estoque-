@@ -1,4 +1,5 @@
 ﻿using System;
+using User;
 
 
 namespace MyAPP
@@ -11,7 +12,6 @@ namespace MyAPP
             sbyte x = 100;
             int y = 99999999;
             long l = 99999999999L;
-            string nome = "Jose";
             int t = int.MaxValue;
 
 
@@ -30,7 +30,6 @@ namespace MyAPP
             Console.WriteLine(l);
             Console.WriteLine(t);
 
-            Console.WriteLine($"bem vindo {nome}");
 
             string nomeInput;
 
@@ -39,6 +38,20 @@ namespace MyAPP
             Console.WriteLine(nomeInput);
 
 
+
+            Console.WriteLine("----------------------------------");
+
+            User11 nome, password, email;
+
+            nome = new User11();
+            password = new User11();
+            email = new User11();
+
+            Console.WriteLine("Digita seu nome");
+            nome.nome = Console.ReadLine();
+
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine($"Seu nome é: {nome.nome}");
 
 
         }
