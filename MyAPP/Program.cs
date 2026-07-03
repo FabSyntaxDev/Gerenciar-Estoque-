@@ -43,6 +43,9 @@ namespace MyAPP
 
             User11 nome, password, email;
 
+
+            string dados = new User11().dados();
+
             nome = new User11();
             password = new User11();
             email = new User11();
@@ -51,7 +54,7 @@ namespace MyAPP
             nome.nome = Console.ReadLine();
 
             Console.WriteLine("------------------------------------");
-            Console.WriteLine($"Seu nome é: {nome.nome}");
+            Console.WriteLine(dados);
 
 
         }
