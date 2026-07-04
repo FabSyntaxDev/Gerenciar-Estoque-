@@ -1,5 +1,4 @@
 ﻿using System;
-using User;
 
 
 namespace MyAPP
@@ -18,7 +17,11 @@ namespace MyAPP
 
 
             Console.WriteLine("Entre com os dados do Produto");
-            string nome = Console.ReadLine();
+            string nomeDoProduto = Console.ReadLine();
+            Console.WriteLine("Preço");
+            double precoDoProduto = Console.Read();
+            Console.WriteLine("Quantidade no Estoque");
+            int quantidadeDoProduto = Console.Read();
 
 
         }
