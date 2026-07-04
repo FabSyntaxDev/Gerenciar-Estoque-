@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 
 namespace MyAPP
@@ -14,9 +15,11 @@ namespace MyAPP
             Console.WriteLine("Entre com os dados do Produto");
             p.nome = Console.ReadLine();
             Console.WriteLine("Preço");
-            p.preco = Console.Read();
+            p.preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.WriteLine("Quantidade no Estoque");
-            p.quantidade = Console.Read();
+            p.quantidade = int.Parse(Console.ReadLine());
+
+
 
 
         }
