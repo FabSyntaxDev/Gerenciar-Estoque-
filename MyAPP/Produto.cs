@@ -11,6 +11,14 @@ namespace MyAPP
         public double preco;
         public int quantidade;
 
+        public Produto(string Nome, double Preco, int Quantidade)
+        {
+            nome = Nome;
+            preco = Preco;
+            quantidade = Quantidade;
+        }
+
+
         public int ValorTotalEmEstoque()
         {
             int total = ((int)preco * quantidade);
