@@ -20,6 +20,18 @@ namespace MyAPP
             p.quantidade = int.Parse(Console.ReadLine());
             Console.WriteLine("Dados do produto: " + p);
 
+            Console.WriteLine("Digite o número de produtos a ser adicionado");
+            int qte = int.Parse(Console.ReadLine());
+            p.AdicionarProdutos(qte);
+
+            Console.WriteLine("Dados atualizados: " + p);
+
+
+
+
+
+
+
 
 
 

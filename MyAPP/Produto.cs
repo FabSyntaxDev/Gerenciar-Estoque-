@@ -22,6 +22,11 @@ namespace MyAPP
             return nome + ", $ " + preco.ToString("F2", System.Globalization.CultureInfo.InvariantCulture) + ", " + quantidade + " unidades, Total: $ " + ValorTotalEmEstoque().ToString("F2", System.Globalization.CultureInfo.InvariantCulture);
         }
 
+        public void AdicionarProdutos(int Quantidade)
+        {
+            quantidade += Quantidade;
+        }
+
 
 
 
