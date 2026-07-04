@@ -18,6 +18,7 @@ namespace MyAPP
             p.preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.WriteLine("Quantidade no Estoque");
             p.quantidade = int.Parse(Console.ReadLine());
+            Console.WriteLine("Dados do produto: " + p);
 
 
 

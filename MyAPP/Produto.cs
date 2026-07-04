@@ -17,6 +17,11 @@ namespace MyAPP
             return total;
         }
 
+        public override string ToString()
+        {
+            return nome + ", $ " + preco.ToString("F2", System.Globalization.CultureInfo.InvariantCulture) + ", " + quantidade + " unidades, Total: $ " + ValorTotalEmEstoque().ToString("F2", System.Globalization.CultureInfo.InvariantCulture);
+        }
+
 
 
 
