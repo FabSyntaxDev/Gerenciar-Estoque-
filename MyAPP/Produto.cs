@@ -27,12 +27,9 @@ namespace MyAPP
             quantidade += Quantidade;
         }
 
-
-
-
-
-
-
-
-    }
+        public void RemoverProdutos(int Quantidade)
+        {
+            quantidade -= Quantidade;
+        }
+}
 }

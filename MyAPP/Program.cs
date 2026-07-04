@@ -26,7 +26,10 @@ namespace MyAPP
 
             Console.WriteLine("Dados atualizados: " + p);
 
-
+            Console.WriteLine("Digite o número de produtos a ser retirado do estoque");
+            int qtr = int.Parse(Console.ReadLine());
+            p.RemoverProdutos(qtr);
+            Console.WriteLine("Dados atualizados: " + p);
 
 
 
