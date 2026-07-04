@@ -7,15 +7,16 @@ namespace MyAPP
     internal class Produto
     {
 
-        string nome;
-        double preco;
-        int quantidade;
+        public string nome;
+        public double preco;
+        public int quantidade;
 
         public int ValorTotalEmEstoque()
         {
             int total = ((int)preco * quantidade);
             return total;
         }
+
 
 
 

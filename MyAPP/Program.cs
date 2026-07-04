@@ -8,20 +8,15 @@ namespace MyAPP
         static void Main(string[] args)
         {
 
-            Produto nome, preco, quantidade;
-
-            nome = new Produto();
-            preco = new Produto();
-            quantidade = new Produto();
-
+            Produto p = new Produto();
 
 
             Console.WriteLine("Entre com os dados do Produto");
-            string nomeDoProduto = Console.ReadLine();
+            p.nome = Console.ReadLine();
             Console.WriteLine("Preço");
-            double precoDoProduto = Console.Read();
+            p.preco = Console.Read();
             Console.WriteLine("Quantidade no Estoque");
-            int quantidadeDoProduto = Console.Read();
+            p.quantidade = Console.Read();
 
 
         }
