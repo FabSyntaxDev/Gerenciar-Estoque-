@@ -9,15 +9,16 @@ namespace MyAPP
         static void Main(string[] args)
         {
 
-            Produto p = new Produto();
-
 
             Console.WriteLine("Entre com os dados do Produto");
-            p.nome = Console.ReadLine();
+            string nomeI = Console.ReadLine();
             Console.WriteLine("Preço");
-            p.preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            double precoI = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.WriteLine("Quantidade no Estoque");
-            p.quantidade = int.Parse(Console.ReadLine());
+            int qntI = int.Parse(Console.ReadLine());
+
+            Produto p = new Produto(nomeI, precoI, qntI);
+
             Console.WriteLine("Dados do produto: " + p);
 
             Console.WriteLine("Digite o número de produtos a ser adicionado");
